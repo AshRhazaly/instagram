@@ -1,13 +1,18 @@
 <p id="notice"><%= notice %></p>
-
-
-    <% @posts.each do |post| %>
-      <%= image_tag post.post_image.thumb.url %>
-      <%= post.caption %>
-      <%= link_to 'Show', post %>
-      <%= link_to 'Edit', edit_post_path(post) %>
-      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <% end %>
-
-
-<%= link_to 'New Post', new_post_path %>
+<main class="container page-main">
+    <%= link_to 'New Post', new_post_path, class: "btn btn-outline-primary" %>
+    <br/>
+    <br/>
+    <section class="row">
+        <% @posts.each do |post| %>
+        <section class="col-4" style="margin-top: 10px;">
+            <section class="card">
+                <section class="card-img-top">
+                    <%= image_tag post.post_image.thumb.url %>
+                </section>
+                <article class="card-block image-caption"><%= post.caption%></article>
+            </section>
+        </section>
+        <% end %>
+    </section>
+</main>

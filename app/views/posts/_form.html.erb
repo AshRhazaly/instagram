@@ -1,23 +1,23 @@
 <main class="container">
-  <%= bootstrap_form_for(post) do |f| %>
-  <% if post.errors.any? %>
-  <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %>
-          prohibited this post from being saved:</h2>
+    <%= bootstrap_form_for(post) do |f| %>
+    <% if post.errors.any? %>
+    <div id="error_explanation">
+        <h2><%= pluralize(post.errors.count, "error") %>
+            prohibited this post from being saved:</h2>
 
-      <ul>
-          <% post.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-          <% end %>
-      </ul>
-  </div>
+        <ul>
+            <% post.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+            <% end %>
+        </ul>
+    </div>
     <% end %>
 
     <%= f.text_area :caption %>
-    <br />
+    <br/>
     <%= f.file_field :post_image %>
-    <br />
+    <br/>
     <%= f.submit %>
-    <br />
-  <% end %>
+    <br/>
+    <% end %>
 </main>

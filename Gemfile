@@ -5,7 +5,17 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+# like functionality
+gem 'acts_as_votable'
+# follow functionality
+gem 'acts_as_follower'
+# User authentication
+gem 'devise'
+# image upload
+gem 'carrierwave', '~> 1.0'
+#bootstrap gems
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
@@ -34,10 +44,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl'
+  gem 'simplecov', :require => false, :group => :test
 end
 
 group :development do

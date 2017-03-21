@@ -16,6 +16,8 @@ gem 'devise'
 # image upload
 gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
+# supports AWS
+gem 'fog-aws'
 #bootstrap gems
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'bootstrap_form'

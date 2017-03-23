@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+#instagram scrapper
+gem "ruby-instagram-scraper"
 #figaro
 gem "figaro"
 # like functionality

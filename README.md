@@ -1,24 +1,7 @@
-# README
+# Instagram scrapper
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###### An easy to use instagram scrapper
 
-Things you may want to cover:
+* Built using Ruby on Rails 5.0
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Makes use of Amazon S3 to store images
